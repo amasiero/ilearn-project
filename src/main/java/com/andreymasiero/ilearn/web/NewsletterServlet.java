@@ -13,16 +13,14 @@ import javax.servlet.http.HttpServletResponse;
 public class NewsletterServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 280329729209462055L;
-	
+
 	@Override
-	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		
-		String email = req.getParameter("email");
-		
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setContentType("text/html");
-		
+
+		String email = req.getParameter("email");
 		PrintWriter writer = resp.getWriter();
-		
+
 		writer.println("<html><body>");
 		writer.println("<h1>Cadastro realizado com sucesso!</h1>");
 		writer.println("<p>E-mail cadastrado:" + email + "</p>");

@@ -22,7 +22,7 @@
           </ul>
         </nav>
 
-        <button class="btn-white">Entrar</button>
+        <a href="#open-modal"><button class="btn-white">Entrar</button></a>
         <button class="btn-blue">Cadastrar</button>
 
       </header>
@@ -62,5 +62,22 @@
         <p>&copy; 2019 - Desenvolvido por Andrey Masiero</p>
       </footer>
     </section>
+    
+    <div id="open-modal" class="modal-dialog">
+      <div class="modal-box">
+        <img src="img/frm-login-head.png" alt="Icone de um usuario."/>
+        <fieldset>
+          <legend>Acessar</legend>
+          <form action="login" method="post">
+            <input type="text" name="user" placeholder="Digite o usuário" required />
+            <input type="password" name="pwd" placeholder="Digite a senha" required />
+            <div class="panel-btn">
+              <a href="#close-modal" class="btn-white close-modal">Cancelar</a>
+              <button class="btn-blue">Enviar</button>
+            </div>
+          </form>
+        </fieldset>
+      </div>
+    </div>
   </body>
 </html>

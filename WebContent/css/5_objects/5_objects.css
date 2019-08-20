@@ -116,6 +116,38 @@
   width: 495px;
 }
 
+.modal-box {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.1);
+  height: 400px;
+  margin: 10% auto;
+  text-align: center;
+  width: 400px;
+}
+
+.modal-dialog {
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: opacity 400ms ease-in;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  z-index: 99999;
+}
+
+.modal-dialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .navigation > ul > li {
   display: inline-block;
 }
@@ -137,6 +169,11 @@
   color: #0158d1;
   border-bottom: 1.2px dotted #0158d1;
   padding: 0 10px;
+}
+
+.panel-btn {
+  text-align: right;
+  margin-right: 8%;
 }
 
 .subscribe {

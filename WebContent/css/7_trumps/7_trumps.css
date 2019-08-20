@@ -1,5 +1,17 @@
-.subscribe > .field {
-  width: 250px;
+a.btn-white {
+  font-size: 18px;
+  height: 35px;
+  transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  padding: 10px;
+  text-decoration: none;
+  width: 100px;
+}
+
+.big > i > img {
+  margin-top: 7px;
+  vertical-align: top !important;
 }
 
 .frm .field {
@@ -15,7 +27,32 @@
   left: 341px;
 }
 
-.big > i > img {
-  margin-top: 7px;
-  vertical-align: top !important;
+.modal-box > fieldset {
+  margin-top: 20px;
+}
+
+.modal-box > fieldset > legend {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.modal-box > img {
+  height: 80px;
+  margin-top: 40px;
+}
+
+.modal-box input {
+  border: solid 1px #dbdbdb;
+  border-radius: 3px;
+  display: block;
+  font-size: 16px;
+  height: 35px;
+  line-height: 35px;
+  margin: 20px auto;
+  padding: 5px 10px;
+  width: 80%;
+}
+
+.subscribe > .field {
+  width: 250px;
 }
