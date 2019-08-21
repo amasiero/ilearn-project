@@ -116,6 +116,11 @@
   width: 495px;
 }
 
+/* adicionado para o cadastro */
+.large-btn {
+  width: 200px;
+}
+
 .modal-box {
   background-color: #fff;
   border-radius: 6px;

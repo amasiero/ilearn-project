@@ -27,36 +27,38 @@
 
       </header>
 
-      <article class="content">
-        <h1>Qual sua próxima habilidade?</h1>
-        <h2>Aqui você poderá desvendar os mistérios por trás de cada habilidade adquirida pelos superheróis da vida real. Descubra um novo mundo de aprendizado.</h2>
+      <article class="second-content">
+        <div class="frm">
+          <h1>Crie uma conta</h1>
+          <form method="post">
+            <div class="field">
+              <i><img src="img/user.png" alt="Icone de uma pessoa"></i>
+              <input type="text" name="name" placeholder="Informe seu nome." required/>
+            </div>
+            <div class="field">
+              <i><img src="img/email.png" alt="Icone de um envelope"></i>
+              <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Informe seu e-mail." required/>
+            </div>
+            <div class="field">
+              <i><img src="img/email.png" alt="Icone de um envelope"></i>
+              <input type="email" name="confirmar-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Confirme seu e-mail." required/>
+            </div>
+            <div class="field">
+              <i><img src="img/key.png" alt="Icone de um telefone"></i>
+              <input type="password" name="pwd" placeholder="Informe uma senha." required/>
+            </div>
+            <div class="field">
+              <i><img src="img/key.png" alt="Icone de um telefone"></i>
+              <input type="password" name="confirmar-pwd" placeholder="Confirme a senha." required/>
+            </div>
+            <button class="btn-blue large-btn adjust-btn-position-1">Criar a conta</button>
+          </form>
+        </div>
       </article>
 
-      <div class="second-content">
-        <section class="vcards-container">
-          <div class="vcard">
-            <h1>x&sup2;</h1>
-            <div class="description">
-              <h2>Matemática</h2>
-              <p>Desde os gregos, você nunca imaginou ter tanta diversão com os números. Descubra como criar arte apenas com equações e dê vida a sua imaginação.</p>
-            </div>
-          </div>
-          <div class="vcard">
-            <h1>&lt;&frasl;&gt;</h1>
-            <div class="description">
-              <h2>Lógica de Programação</h2>
-              <p>Assim como o Neo em Matrix, aprenda a ver o mundo através dos modelos binários. Você irá descobrir que pode trazer vida até a objetos inanimados.</p>
-            </div>
-          </div>
-          <div class="vcard">
-            <h1>!?</h1>
-            <div class="description">
-              <h2>Português</h2>
-              <p>Venha aprender a ser um romântico e impressione a todos com poesias retiradas do fundo do coração. Grandes truques para você atingir o coração de todos da maneira que deseja. </p>
-            </div>
-          </div>
-        </section>
-      </div>
+      <picture class="content">
+        <img src="img/learning.png" class="ilustration" alt="Ilustração de uma mulher sentada no sofá mexendo no computador." style="margin-top:120px;"/>
+      </picture>
 
       <footer class="footer">
         <p>&copy; 2019 - Desenvolvido por Andrey Masiero</p>
@@ -78,7 +80,7 @@
           </form>
         </fieldset>
       </div>
-    </div>
+    </div>    
     
     <script type="text/javascript" src="scripts/app.js"></script>
   </body>
